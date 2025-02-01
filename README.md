@@ -50,7 +50,7 @@
 
 ## 开发
 
-- **源代码**：[GitHub Repository](假设链接)
+- **源代码**：[https://github.com/kill0es/cape-show-for-mine-craft]
 - **构建**：使用 Gradle Wrapper，运行 `./gradlew build` (Linux/Mac) 或 `gradlew.bat build` (Windows) 来编译模组。
 
 ## 贡献
@@ -63,7 +63,7 @@ CapeShow Mod 遵循 [MIT License](假设链接)。
 
 ## 联系
 
-- **邮件**：[你的邮箱]
+- **邮件**：[quansen.88.com]
 - **Discord**：[你的 Discord 服务器]
 
 通过 CapeShow Mod，展示你的个性化披风吧！

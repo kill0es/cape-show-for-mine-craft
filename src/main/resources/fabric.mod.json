@@ -5,11 +5,11 @@
     "name": "CapeShow",
     "description": "A mod to manage and animate capes in Minecraft",
     "authors": [
-      "Your Name"
+      "kill0es"
     ],
     "contact": {
-      "homepage": "https://example.com/",
-      "sources": "https://github.com/yourusername/cape_show"
+      "homepage": "https://quansen88.github.io/",
+      "sources": "https://github.com/kill0es/cape-show-for-mine-craft"
     },
     "license": "MIT",
     "icon": "assets/capeshow/icon.png",
