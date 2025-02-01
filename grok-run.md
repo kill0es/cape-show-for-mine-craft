@@ -23,22 +23,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3.5.0
+    - uses: actions/checkout@v3
 
     - name: Set up JDK 17
-      uses: actions/setup-java@v3.5.0
+      uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'adopt'
 
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v3.5.0
+      uses: gradle/gradle-build-action@v3
 
     - name: Compile with Gradle
       run: ./gradlew build
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3.5.0
+      uses: actions/upload-artifact@v3
       with:
         name: MinecraftMod
         path: build/libs/

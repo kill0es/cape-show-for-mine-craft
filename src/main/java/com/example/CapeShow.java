@@ -1,7 +1,7 @@
 package com.example.capeshow;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v3.5.0.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v3.CommandRegistrationCallback;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.server.command.ServerCommandSource;
 
