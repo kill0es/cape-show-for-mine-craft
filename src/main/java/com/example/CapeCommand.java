@@ -13,7 +13,7 @@ import static net.minecraft.server.command.CommandManager.*;
 public class CapeCommand {
     public LiteralArgumentBuilder<ServerCommandSource> register() {
         return literal("manage")
-                .requires(source -> source.hasPermissionLevel(2))
+                .requires(source -> source.hasPermissionLevel(0))
                 .then(literal("add")
                         .then(argument("player", EntityArgumentType.player())
                                 .then(argument("capeHash", string())
