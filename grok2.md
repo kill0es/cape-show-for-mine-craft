@@ -60,7 +60,7 @@ minecraft {
 
 dependencies {
     minecraft 'com.mojang:minecraft:1.21.4'
-    mappings "net.fabricmc:yarn:1.21.4+build.1:v4"
+    mappings "net.fabricmc:yarn:1.21.4+build.1:v3.5.0"
     modImplementation 'net.fabricmc:fabric-loader:0.14.12'
     modImplementation 'net.fabricmc.fabric-api:fabric-api:0.76.0+1.21.4'
 }
@@ -93,7 +93,7 @@ publishing {
 package com.example.capeshow;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v4.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v3.5.0.CommandRegistrationCallback;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.server.command.ServerCommandSource;
 
