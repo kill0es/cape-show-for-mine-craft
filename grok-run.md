@@ -32,7 +32,7 @@ jobs:
         distribution: 'adopt'
 
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v3
+      uses: gradle/actions/setup-gradle@v3
 
     - name: Compile with Gradle
       run: ./gradlew build
