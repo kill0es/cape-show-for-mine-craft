@@ -27,12 +27,7 @@ jobs:
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
+      if: success() && hashFiles('build/libs/*.jar') != ''
       with:
         name: MinecraftMod
         path: build/libs/
-
-    - name: Download Artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: MinecraftMod
-        path: build/to/download/to
