@@ -32,7 +32,7 @@ jobs:
         distribution: 'adopt'
 
     - name: Setup Gradle
-      uses: gradle/actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
 
     - name: Compile with Gradle
       run: ./gradlew build
