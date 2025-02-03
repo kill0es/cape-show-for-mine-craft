@@ -1,0 +1,31 @@
+plugins {
+    id 'fabric-loom' version '1.2-SNAPSHOT' // 使用最新的 Fabric Loom 版本
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+version = '1.0.0' // 确保版本号与其他地方一致
+group = 'com.example'
+
+minecraft {
+    version = '1.21.4' // 或最新的 Minecraft 版本
+    mappings channel: 'yarn', version: '1.21.4+build.1'
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.4'
+    mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
+    modImplementation 'net.fabricmc:fabric-loader:0.14.12'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.76.0+1.21.4'
+}
+
+// 确保 JAR 文件输出到正确的目录
+tasks.jar {
+    destinationDirectory.set(file("$buildDir/libs"))
+    manifest {
+        attributes([
+            'Main-Class': 'com.example.capeshow.CapeShow' // 替换为你的主类
+        ])
+    }
+}
